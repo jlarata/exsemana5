@@ -1,15 +1,15 @@
-/* 12 Escribir una función que calcule el máximo común divisor de dos números.  */
+/* 12 Escribir una función que calcule el máximo común divisor de tres números.  */
 
 using System;
 
-namespace ejercicio12
+namespace ejercicio13
 {
     internal class Program
     {
         static void Main(string[] args)
         {        
-            int num1, num2, maxdiv;
-            int[] arrayDeDiv1, arrayDeDiv2;
+            int num1, num2, num3, maxdiv;
+            int[] arrayDeDiv1, arrayDeDiv2, arrayDeDiv3;
 
             Console.WriteLine("Ingrese el primer valor: ");
             num1 = int.Parse(Console.ReadLine());
@@ -17,10 +17,14 @@ namespace ejercicio12
             Console.WriteLine("Ingrese el segundo valor: ");
             num2 = int.Parse(Console.ReadLine());
 
+            Console.WriteLine("Ingrese el tercer valor: ");
+            num3 = int.Parse(Console.ReadLine());
+
             arrayDeDiv1 = buscaDivisores(num1);
             arrayDeDiv2 = buscaDivisores(num2);
+            arrayDeDiv3 = buscaDivisores(num3);
             
-            maxdiv = comparaArrays(arrayDeDiv1, arrayDeDiv2);
+            maxdiv = comparaArrays(arrayDeDiv1, arrayDeDiv2, arrayDeDiv3);
             Console.WriteLine("El máximo común divisor es {0}", maxdiv);           
         }
 
@@ -48,10 +52,9 @@ namespace ejercicio12
             arrayDeDivisores[0] = 1;
             arrayDeDivisores[arrayDeDivisores.Length-1] = valor;
             return arrayDeDivisores;
-
         }
 
-        static int comparaArrays(int[] array1, int[] array2){
+        static int comparaArrays(int[] array1, int[] array2, int[] array3){
 
             /*debug*/
             /*for (int i = (array1.Length-1); i>=0; i--){
@@ -60,16 +63,24 @@ namespace ejercicio12
 
             for (int i = (array2.Length-1); i>=0; i--){
                 Console.WriteLine(array2[i]);
+            }
+
+            for (int i = (array3.Length-1); i>=0; i--){
+                Console.WriteLine(array3[i]);
             }*/
 
             for (int i = (array1.Length-1); i>=0; i--)
             {
                 for (int j = (array2.Length-1); j>=0; j--)
                 {
-                    if (array1[i] == array2[j])
+                    for (int k=(array3.Length-1); k>=0; k--)
+                    {
+                        if ((array1[i] == array2[j]) && (array1[i] == array3[k]))
                     {
                         return array1[i];
                     }
+                    }
+                    
                 }        
             }
             

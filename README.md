@@ -12,9 +12,9 @@
 
 9. Idem al anterior pero que devuelva un array con ambos cálculos: el área y el volumen. 
 
-10. Crear una función a la que se le pasa un número entero y devuelve la cantidad de divisores primos que tiene.-->
-11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de dicho número.
-12. Escribir una función que calcule el máximo común divisor de dos números. 
+10. Crear una función a la que se le pasa un número entero y devuelve la cantidad de divisores primos que tiene.
+11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de dicho número. 
+12. Escribir una función que calcule el máximo común divisor de dos números. -->
 
 13. Escribir una función que calcule el máximo común divisor de tres números
 
