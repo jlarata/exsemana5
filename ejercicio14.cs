@@ -9,8 +9,7 @@ namespace ejercicio14
         static void Main(string[] args)
         {        
             int maxdiv;
-            int[] arrayDeDiv1, arrayDeDiv2, arrayDeDiv3;*/
-
+            int[] arrayDeCoincidencias;
             int[] arrayParaMCD = creaYPueblaArrayParaMCD();
             
             //crea array de arrays con tamanio igua a tamanio del array a analizar
@@ -27,9 +26,19 @@ namespace ejercicio14
                 arrayDeArraysDeDivisores[i] = arrayDeDivs;
             }
 
+            arrayDeCoincidencias = invocadorArrayDeCoincidencias(arrayDeArraysDeDivisores);
                        
-            maxdiv = comparaArrays(arrayDeArraysDeDivisores);
-            Console.WriteLine("El máximo común divisor es {0}", maxdiv);
+            maxdiv = buscaMaximoValor(arrayDeCoincidencias);
+            Console.WriteLine("El máximo común divisor los {0} arrays es {1}", arrayParaMCD.Length, maxdiv);
+
+             /*esto imprime el array completo*/
+             /*
+                Console.Write("[ ");
+                for (int i = 0; i<arrayDeCoincidencias.Length; i++){
+                    Console.Write(arrayDeCoincidencias[i]+" ");
+                }
+                Console.Write("]");*/
+
         }
 
         static int[] creaYPueblaArrayParaMCD() {
@@ -45,23 +54,14 @@ namespace ejercicio14
                 Console.WriteLine("Ingrese el valor número {0} del array: ", (i+1));
                 arrayParaMCD[i] = int.Parse(Console.ReadLine());
             }
-
-            /*imprime el array*//*
-                Console.Write("[ ");
-                for (int i = 0; i<arrayParaMCD.Length; i++){
-                    Console.Write(arrayParaMCD[i]+" ");
-                }
-                Console.Write("]");*/
-
             return arrayParaMCD;
         }
 
         static int[] buscaDivisores(int valor) {
-            
+        
             int cantidadParaArray = 0;
 
             for (int i=1; i<(valor+1); i++){
-            
                 if (valor % i == 0){
                     cantidadParaArray++;
                 }
@@ -82,44 +82,30 @@ namespace ejercicio14
             return arrayDeDivisores;
         }
 
-//ALTERNATIVA: hacer comparaciones binarias: cada array con el siguiente para obtener numeros en comun
-//al final de ese proceso buscar el mayor
+        static int[] invocadorArrayDeCoincidencias(int[][] arrayDeArraysDeDivisores)
+        {           
+            int[] antArrayDeCoincidencias, nuevoArrayDeCoincidencias;
 
-//HACER UN METODO BINARIO, SOLO UN ARRAY CONTRA OTRO: /done -< SIN CHEQUEAR
+            //crea un primer array de coincidencias con los primeros dos arrays de la lista
+            antArrayDeCoincidencias = creaArrayDeCoincidencias(arrayDeArraysDeDivisores[0], arrayDeArraysDeDivisores[1]);
 
-//AHORA TOCARÍA INVOCARLO. ¿CUÁNTAS VECES? EL TOTAL DE ARRAYS MENOS UNA. la primera vez se mandan el primer 
-//segundo array. a partir de la segunda vez, se manda el resultado de la primera mas la que sigue /done ->SIN CHEQUEAR
-
-//FINALMENTE AL ARRAY DE COINCIDENCIAS HACERLE UN MAX. 
-
-        //primero esto:
-
-    static int[] invocadorArrayDeCoincidencias()
-        {
-            int cantArrays = arrayDeDivisores.Length;
-            int primeraComparacion = 0;
-
-            for (int i=0, i<cantArrays;i++)
+            //luego itera sobre los demás, siempre usando el array anterior, creando cadaa vez un nuevo array de coincidencias
+            for (int i=2; i<arrayDeArraysDeDivisores.Length; i++)
             {
-            //la primera vez
-            if (primeraComparacion = 0) {
-            int[] arrayDeCoincidencias = creaArrayDeCoincidencias(arrayDeArraysDeDivisores[i], arrayDeArraysDeDivisores[i+1])
-            primeraComparacion++;
+                nuevoArrayDeCoincidencias = creaArrayDeCoincidencias(antArrayDeCoincidencias, arrayDeArraysDeDivisores[i]);
+                if (i == arrayDeArraysDeDivisores.Length-1) {
+                    return nuevoArrayDeCoincidencias;        
+                }
             }
-            //a partir de la segunda
-            for (int i=0; i<(arrayDeArraysDeDivisores.Length-1); i++){
-            int[] arrayDeCoincidencias = creaArrayDeCoincidencias(arrayDeCoincidencias, arrayDeArraysDeDivisores[i+2])
-            }
-            }
-            return creaArrayDeCoincidencias;
+            return antArrayDeCoincidencias; //esto no deberia retornar nunca pero si acá ponia el nuevoarray tiraba error
         }
 
-    static int[] creaArrayDeCoincidencias(int[] array1, int[] array2){
+        static int[] creaArrayDeCoincidencias(int[] array1, int[] array2){
         
-        int cantCoincidencias = 0
+        int cantCoincidencias = 0;
 
-        for (int i=0 i<array1.Length; i++){
-            for (int j=0 j<array2.Length; j++){
+        for (int i=0; i<array1.Length; i++){
+            for (int j=0; j<array2.Length; j++){
                 if (array1[i] == array2[j]){
                     cantCoincidencias++;
                 }
@@ -128,110 +114,29 @@ namespace ejercicio14
 
         int[] coincidencias = new int[cantCoincidencias];
         int currentCoincidencia = 0;
-        for (int i=0 i<array1.Length; i++){
-            for (int j=0 j<array2.Length; j++){
+        for (int i=0; i<array1.Length; i++){
+            for (int j=0; j<array2.Length; j++){
                 if (array1[i] == array2[j]){
                     coincidencias[currentCoincidencia] = array1[i];
-                    currentCoincidencia++
+                    currentCoincidencia++;
                 }
             }
         }
 
         return coincidencias;
-    }
+        }
 
-
-
-
-
-
-
-
-
-
-
-
-        /*
-
-        static int comparaArrays(int[][] arrayDeArraysParaMCD){
-
-            //por cada array en el array de arrays...
-
-            for (int i = 0; i < arrayDeArraysParaMCD.Length; i++)
-            {
-                //itera sobre cada numero de ese array
-                for (int x=(arrayDeArraysParaMCD[i][].Length-1); x>=0; x--)
-                    {
-
-                        //si no es el ultimo array
-                        if (!arrayDeArraysParaMCD[i][] == (arrayDeArraysParaMCD.Length-1))
-                        {
-                            //itera sobre el siguiente array
-                            estamismafuncion+1();
-                        }
-                    }
-            }
-            return 0; //esto no debería suceder nunca porque como mínimo salta el 1
-        }   */
-
-
-/*        int cantidadRecursiva = 0; <- esto al llamar el metodo
-        static void iteraSobreArrays(int[][] arrayDeArraysParaMCD, int cantidadRecursiva){
+        static int buscaMaximoValor(int[] arrayDeCoincidenciasFinal) {
             
-            cantidadRecursiva ++;
-            //itera sobre cada numero del array
-            for (int x=(arrayDeArraysParaMCD[i][].Length-1); x>=0; x--)
-                {
-                        //pero si no es el ultimo array 
-                    if (!arrayDeArraysParaMCD[i][] == (arrayDeArraysParaMCD.Length-1))
-                    {
-                            // primero itera sobre el siguiente array recursivamente
-                        iteraSobreArrays(arrayDeArraysParaMCD[i+1][], )
-                    } else {
-                            //?¡? aca irian las comparaciones
-                            //es una funcion que es un  for: por cada elemento de esta iteracion, 
-                            //comparar si es igual al elemento
-                            //de cada anterior iteracion
-                        comparaElementos(arrayDeArraysParaMCD[i][], cantidadRecursiva)
-                    }                        
+            int maxValor = 0;
+            
+            for (int i=0; i<arrayDeCoincidenciasFinal.Length;i++) {
+                if (arrayDeCoincidenciasFinal[i] > maxValor) {
+                    maxValor = arrayDeCoincidenciasFinal[i];
                 }
-        }
-        static void comparaElementos(int[][] arrayDeArraysParaMCD, int cantidadRecursiva){
-            for (int i = 0; i<cantidadRecursiva, i++){
-                arrayDeArraysParaMCD[i][i] == arrayDeArraysParaMCD[i+1][i]
-            }
-        }
-
-
-            /*debug*/
-            /*for (int i = (array1.Length-1); i>=0; i--){
-                Console.WriteLine(array1[i]);
             }
 
-            for (int i = (array2.Length-1); i>=0; i--){
-                Console.WriteLine(array2[i]);
-            }
-
-            for (int i = (array3.Length-1); i>=0; i--){
-                Console.WriteLine(array3[i]);
-            }*/
-
-
-            /*ejercicio 13 for (int i = (array1.Length-1); i>=0; i--)
-            {
-                for (int j = (array2.Length-1); j>=0; j--)
-                {
-                    for (int k=(array3.Length-1); k>=0; k--)
-                    {
-                        if ((array1[i] == array2[j]) && (array1[i] == array3[k]))
-                    {
-                        return array1[i];
-                    }
-                    }
-                    
-                }        
-            }*/
-            
-                
+            return maxValor;
+        }                 
     }
 }
