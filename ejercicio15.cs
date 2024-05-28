@@ -41,12 +41,6 @@ namespace ejercicio15
         }   
             
 
-            //PROBLEMA
-            //la primera iteracion (todos los de la primera factoresXcantidades1) va a dar bien
-            //pero si después hago una segunda iteracion con el segundo fxc se van a repetir los valores repetidos.
-            //SOLUCION?
-            //en la primera iteracion hacer una lista de cada valor repetido
-            //de manera que en la segunda iteración se pueda comparar contra esa lista y descartar los casos.
 
             /* for debugging porpouse
             imprimeArrayCompleto(fact1);
@@ -57,11 +51,7 @@ namespace ejercicio15
             imprimeArrayDeArraysCompleto(factoresXCantidades2);
             */
 
-            //maxdiv = comparaArrays(arrayDeDiv1, arrayDeDiv2);
-            //Console.WriteLine("El máximo común divisor es {0}", maxdiv);           
-        
-
-        
+       
 
         static int[] factoriza(int valor) {
 
@@ -181,8 +171,6 @@ namespace ejercicio15
                 } else {
                     Console.WriteLine("{0} en lista 1 coincide con {1} en la lista 2.", arrayDeArrays1[i][0], arrayDeArrays2[coincidencia][0]);
                         
-                        //OJO ESTO FALLA SI SON 3 O MÁS. SI SON 3 O MÀS VA A HABER QUE HACER UNA LISTA DE UNICOS... UN EMBOLE
-
                         //debug
                          Console.WriteLine("se procede a ver cuál multiplicacion de factor por su cantidad es mayor, entre {0} y {1}", devuelvePotencia(arrayDeArrays1[i][0], arrayDeArrays1[i][1]), devuelvePotencia(arrayDeArrays2[coincidencia][0],arrayDeArrays2[coincidencia][1]));
                             if ((devuelvePotencia(arrayDeArrays1[i][0], arrayDeArrays1[i][1])) >= devuelvePotencia(arrayDeArrays2[coincidencia][0], arrayDeArrays2[coincidencia][1])){
@@ -224,92 +212,6 @@ namespace ejercicio15
             }
             return MCM;
         }
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                /*
-                
-                //debug
-                Console.WriteLine("chequeo del numero {0} contra los factores repetidos...", arrayDeArrays1[i][0]);
-                for (int x = 0; x<repetidos.Length; x++){
-                    //debug
-                    Console.WriteLine("se chequea contra el repetido Nº {0} que es {1}...", x, factoresRepetidos[x]);
-                    if (factoresXCantidades1[i][0] == factoresRepetidos[x]){
-                        esRepetido = 1;
-                        break;
-                    }
-                }
-                if (esRepetido == 1){
-                        //debug
-                        Console.WriteLine("{0} está en lista de factores repetidos...", arrayDeArrays1[i][0]);
-                        esRepetido = 0;
-                        calculaMayorDeDosFactores()
-                    } procede solo
-
-
-
-
-                for (int j = 0; j<factoresXCantidades2.Length; j++){
-                    
-                 
-                    
-                    
-
-                    for (int z = 0; z<factoresXCantidades2.Length; z++){
-                        //debug
-                        Console.WriteLine("como no era repetido comienza chequeo contra los numeros del segundo array: ahora con {0}...", factoresXCantidades2[z][0]);
-                        if (factoresXCantidades1[i][0] == factoresXCantidades2[z][0]){
-                                esNuevo = 0;
-                                coincidencia = z;
-                            }
-                    }
-                     
-                    if (esNuevo == 1){
-                        //debug
-                        Console.WriteLine("{0} es un numero que no está en la otra lista. simplemente se suma al MCM",factoresXCantidades1[i][0]);                 
-                        MCM *= devuelvePotencia(factoresXCantidades1[i][0], factoresXCantidades1[i][1]);
-                        //debug
-                        Console.WriteLine("el MCM ahora es {0}", MCM);
-                        break;
-                        } else {
-
-                        //debug
-                        Console.WriteLine("{0} (lista 1) coincide con {1} (lista 2) . se suma el numero a la lista de repetidos y se pasa al siguiente index de repetidos", factoresXCantidades1[i][0], factoresXCantidades2[coincidencia][0]);
-                        
-                        //OJO ESTO FALLA SI SON 3 O MÁS. SI SON 3 O MÀS VA A HABER QUE HACER UNA LISTA DE UNICOS... UN EMBOLE
-
-                        factoresRepetidos[factorRepetidoIndex] = factoresXCantidades1[i][0];
-                        //debug
-                         Console.WriteLine("agregado a la lista");
-                        factorRepetidoIndex++;
-                        //debug
-                         Console.WriteLine("sumado {0} al index, ahora se procede a ver cuál multiplicacion de factor por su cantidad es mayor, entre {1} y {2}", factoresXCantidades1[i][0], devuelvePotencia(factoresXCantidades1[i][0], factoresXCantidades1[i][1]), devuelvePotencia(factoresXCantidades2[coincidencia][0],factoresXCantidades2[coincidencia][1]));
-                            if ((devuelvePotencia(factoresXCantidades1[i][0], factoresXCantidades1[i][1])) >= devuelvePotencia(factoresXCantidades2[coincidencia][0], factoresXCantidades2[coincidencia][1])){
-                                //debug
-                                 Console.WriteLine("era mayor o igual la primera");
-                                MCM *= (devuelvePotencia(factoresXCantidades1[i][0], factoresXCantidades1[i][1]));
-                                //debug
-                                 Console.WriteLine("En este momento el MCM es {0}", MCM);
-                            } else {
-                                //debug
-                                 Console.WriteLine("era mayor la segunda");
-                                MCM *= (devuelvePotencia(factoresXCantidades2[coincidencia][0], factoresXCantidades2[coincidencia][1]));
-                                //debug
-                                 Console.WriteLine("En este momento el MCM es {0}", MCM);
-                                
-                            }
-                        esNuevo = 1;
-                        
-                        }    
-                    }
-                } */
                 
         static int[] calculaFactoresRepetidos(int[][] array1, int[][] array2){
 

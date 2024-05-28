@@ -9,21 +9,14 @@
 6. Se necesita crear una función a la que se le pasan por parámetro dos enteros y muestra todos los números comprendidos entre ellos, inclusive.
 7. Armar una función que muestre en pantalla el doble del valor que se le pasa como parámetro.
 8. Se necesita una función que calcule y muestre en pantalla el área o el volumen de un cilindro, según se especifique. Para distinguir un caso de otro, además de pasarle por parámetro el radio y la altura, se le pasará el carácter ’a’ (para área) o ’v’ (para el volumen). 
-
 9. Idem al anterior pero que devuelva un array con ambos cálculos: el área y el volumen. 
-
 10. Crear una función a la que se le pasa un número entero y devuelve la cantidad de divisores primos que tiene.
 11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de dicho número. 
-12. Escribir una función que calcule el máximo común divisor de dos números. -->
-
+12. Escribir una función que calcule el máximo común divisor de dos números.
 13. Escribir una función que calcule el máximo común divisor de tres números
-
 14. Escribir una función que calcule el máximo común divisor de los números contenidos en un array
-
-15. Escribir una función que calcule el mínimo común múltiplo de dos números .
-
-16. Escribir una función que calcule el mínimo común múltiplo de tres números. 
-
+15. Escribir una función que calcule el mínimo común múltiplo de dos números 
+16. Escribir una función que calcule el mínimo común múltiplo de tres números.-->
 17.  Escribir una función que calcule el mínimo común múltiplo de los números contenidos en un array.
 18. Escribir una función que indique si dos números enteros positivos son amigos. Dos números son amigos, si la suma de sus divisores (distintos de ellos mismos) son iguales.
 19.  	Escribir una función que indique si un número es primo.
