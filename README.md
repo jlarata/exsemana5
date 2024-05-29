@@ -11,13 +11,14 @@
 8. Se necesita una función que calcule y muestre en pantalla el área o el volumen de un cilindro, según se especifique. Para distinguir un caso de otro, además de pasarle por parámetro el radio y la altura, se le pasará el carácter ’a’ (para área) o ’v’ (para el volumen). 
 9. Idem al anterior pero que devuelva un array con ambos cálculos: el área y el volumen. 
 10. Crear una función a la que se le pasa un número entero y devuelve la cantidad de divisores primos que tiene.
-11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de dicho número. 
-12. Escribir una función que calcule el máximo común divisor de dos números.
+11.  Crear una función a la que se le pasa un número entero y devuelve un array con los divisores primos de 
+dicho número
+12. Escribir una función que calcule el máximo común divisor de dos números. 
 13. Escribir una función que calcule el máximo común divisor de tres números
 14. Escribir una función que calcule el máximo común divisor de los números contenidos en un array
-15. Escribir una función que calcule el mínimo común múltiplo de dos números 
-16. Escribir una función que calcule el mínimo común múltiplo de tres números.-->
-17.  Escribir una función que calcule el mínimo común múltiplo de los números contenidos en un array.
+15. Escribir una función que calcule el mínimo común múltiplo de dos números .
+16. Escribir una función que calcule el mínimo común múltiplo de tres números. 
+17.  Escribir una función que calcule el mínimo común múltiplo de los números contenidos en un array.-->
 18. Escribir una función que indique si dos números enteros positivos son amigos. Dos números son amigos, si la suma de sus divisores (distintos de ellos mismos) son iguales.
 19.  	Escribir una función que indique si un número es primo.
 20.  	Escribir una función que reciba los parámetros a y n; y calcule la potencia n de a. (a  n). 
@@ -29,7 +30,7 @@ Para más información sobre la distancia euclidiana: https://www.youtube.com/wa
 25.  	Escribir una función a la que se le pasa un array de enteros y un número. Debe buscar el número en el array e indicar si se encuentra o no.
 26.  	Escribir una función a la que se le pasa dos arrays, el número de elementos útiles y que operación se desea realizar: sumar, restar, multiplicar o dividir (mediante un carácter: ’s’, ’r’, ’m’, ’d’). La función debe devolver un array con los resultados.
 27.  	Escribir una función que ordene el array que se le pasa por parámetro.
-     28.  Crear una función que devuelva la suma de un array.
+28.  Crear una función que devuelva la suma de un array.
 
 29.  	Crear una función que pasando un número decimal, lo devuelva en binario. Haz otra función que dado un binario binario , nos devuelva su número decimal. Para representar un número en binario se puede usar por ejemplo una cadena de caracteres como el string ”0011” representa el número 3, aunque también se puede usar un número del tipo long.
 30.  	Crear una función que pasando un número decimal, lo devuelva en hexadecimal. Haz otra función que dado un número en hexadecimal, lo devuelva en decimal.

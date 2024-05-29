@@ -17,14 +17,13 @@ namespace ejercicio17
             int[][] factoresXCantidades = iteraFactoresPorCantidades(jaggedDeFactores, factoresDistintos);
             int[] factoresEnComun = iteraBuscaFactoresEnComun(factoresXCantidades); 
             int[] factoresIndividuales = iteraBuscaFactoresIndividuales(factoresEnComun, factoresXCantidades);
-
-            if (factoresIndividuales.Length == 0){
+             if (factoresIndividuales.Length == 0){
                 MCM = calculaMCMSimple(factoresEnComun);
             } else {
                 MCM = calculaMCMComplejo(factoresEnComun, factoresIndividuales);
             }
             Console.WriteLine("El MCM es {0}", MCM);
-
+            
             /*TODA LA INFORMACIÓN QUE LOS PIBES QUIEREN 
             Console.Write("\n\nEstos son los factores completos: ");
             imprimeArrayDeArraysCompleto(jaggedDeFactores);
@@ -41,7 +40,7 @@ namespace ejercicio17
             
             int cantNumeros = 0;
             
-            Console.WriteLine("Ingrese un array de números enteros positivos separados por un espacio (ejempo 4 -2 513 1): ");
+            Console.WriteLine("Ingrese un array de números enteros positivos separados por un espacio (ejempo 4 2 513 1): ");
             string stringDeNumeros = Console.ReadLine();
             string[] arrayDeNumeros = stringDeNumeros.Split(' ', '"');
                         
@@ -198,6 +197,14 @@ namespace ejercicio17
             
             //crea un array de arrays con una lenght igual a la cantida de factores distintos
             int[] arrayFactorporXCantidad = new int[factoresDistintos*2];
+
+            //si uno de los numeros es primos no se va a poder iterar, porque no se va a poder
+            //hacer i+1 o i-1 entonces:
+            if (factor.Length == 1){
+                arrayFactorporXCantidad[0] = factor[0];
+                arrayFactorporXCantidad[1] = 1;
+            } else {
+
             //inicializa en el valor del primer factor y reserva en memoria el numero 0 como
             // indice del primer factor para la nueva arraya
             int currentFactor=factor[0], currentFactorIndex=0, currentCantidad=1;
@@ -234,7 +241,7 @@ namespace ejercicio17
                     arrayFactorporXCantidad[arrayFactorporXCantidad.Length-2] = factor[factor.Length-1];
                     arrayFactorporXCantidad[arrayFactorporXCantidad.Length-1] = currentCantidad;
                 }
-
+            }
             return arrayFactorporXCantidad;
         }
 
