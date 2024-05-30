@@ -21,8 +21,8 @@ dicho número
 17.  Escribir una función que calcule el mínimo común múltiplo de los números contenidos en un array.
 18. Escribir una función que indique si dos números enteros positivos son amigos. Dos números son amigos, si la suma de sus divisores (distintos de ellos mismos) son iguales.
 19.  	Escribir una función que indique si un número es primo.
-20.  	Escribir una función que reciba los parámetros a y n; y calcule la potencia n de a. (a  n). -->
-21.   Escribir una función que muestre en binario un número entre 0 y 255.
+20.  	Escribir una función que reciba los parámetros a y n; y calcule la potencia n de a. (a  n). 
+21.   Escribir una función que muestre en binario un número entre 0 y 255.-->
 22.  	Escribir una función que sume los n primeros números impares.
 23.  	Escribir una función que calcule la distancia euclídea entre dos puntos del plano. Tener en cuenta que la función debe recibir 4 parámetros: las 2 coordenadas del primer punto y las 2 coordenadas del segundo punto. 
 Para más información sobre la distancia euclidiana: https://www.youtube.com/watch?v=aaSrjfMyq1Y
