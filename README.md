@@ -27,9 +27,9 @@ dicho número
 23.  	Escribir una función que calcule la distancia euclídea entre dos puntos del plano. Tener en cuenta que la función debe recibir 4 parámetros: las 2 coordenadas del primer punto y las 2 coordenadas del segundo punto. 
 Para más información sobre la distancia euclidiana: https://www.youtube.com/watch?v=aaSrjfMyq1Y
 24.  	Escribir una función a la que se le pasa como parámetro un array que debe rellenar. Se leerá por teclado una serie de números: guardar en el array solo los pares e ignorar los impares. También hay que devolver la cantidad de impares ignorados.
-25.  	Escribir una función a la que se le pasa un array de enteros y un número. Debe buscar el número en el array e indicar si se encuentra o no.-->
+25.  	Escribir una función a la que se le pasa un array de enteros y un número. Debe buscar el número en el array e indicar si se encuentra o no.
 26.  	Escribir una función a la que se le pasa dos arrays, el número de elementos útiles y que operación se desea realizar: sumar, restar, multiplicar o dividir (mediante un carácter: ’s’, ’r’, ’m’, ’d’). La función debe devolver un array con los resultados.
-27.  	Escribir una función que ordene el array que se le pasa por parámetro.
+27.  	Escribir una función que ordene el array que se le pasa por parámetro.-->
 28.  Crear una función que devuelva la suma de un array.
 
 29.  	Crear una función que pasando un número decimal, lo devuelva en binario. Haz otra función que dado un binario binario , nos devuelva su número decimal. Para representar un número en binario se puede usar por ejemplo una cadena de caracteres como el string ”0011” representa el número 3, aunque también se puede usar un número del tipo long.
