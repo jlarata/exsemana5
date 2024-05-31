@@ -2,7 +2,7 @@
 
 using System;
 
-namespace ejercicio
+namespace ejercicio21
 {
     internal class Program
     {
