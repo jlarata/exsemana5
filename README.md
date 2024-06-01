@@ -1,4 +1,7 @@
-"# exsemana5" 
+# Ejercicios Semana5
+
+## Trabajo Práctico 
+```asd```
 
 <!-- 
 1. Armar una función, a la que se le pase como parámetro un número N, y muestre por pantalla N veces el mensaje: “Módulo ejecutándose”.
@@ -32,9 +35,9 @@ Para más información sobre la distancia euclidiana: https://www.youtube.com/wa
 27.  	Escribir una función que ordene el array que se le pasa por parámetro.
 28.  Crear una función que devuelva la suma de un array.
 29.  	Crear una función que pasando un número decimal, lo devuelva en binario. Haz otra función que dado un binario binario , nos devuelva su número decimal. Para representar un número en binario se puede usar por ejemplo una cadena de caracteres como el string ”0011” representa el número 3, aunque también se puede usar un número del tipo long.
-30.  	Crear una función que pasando un número decimal, lo devuelva en hexadecimal. Haz otra función que dado un número en hexadecimal, lo devuelva en decimal.-->
+30.  	Crear una función que pasando un número decimal, lo devuelva en hexadecimal. Haz otra función que dado un número en hexadecimal, lo devuelva en decimal.
 31.  	Escribir una función que devuelva el número de la posición Fibonacci.
 32.  	Escribir una función que dado un número natural, escriba por pantalla su secuencia de la Conjetura de Collatz y que devuelva la longitud o cantidad de pasos que tiene hasta llegar al primer 1.
   Para más información sobre la conjetura ver:
 ●	https://www.unocero.com/ciencia/conjetura-collatz-terence-tao/
-●	https://www.youtube.com/watch?v=q_dvxXc7d2Y
+●	https://www.youtube.com/watch?v=q_dvxXc7d2Y-->
