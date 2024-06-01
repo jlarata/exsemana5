@@ -1,7 +1,10 @@
 # Ejercicios Semana5
 
-## Trabajo Práctico 
-```asd```
+```Ariel Wasserman```
+
+## Trabajo Práctico para la materia Técnicas de Programación
+*Primer Cuatrimestre, Carrera Desarrollo de Software, año 2024
+
 
 <!-- 
 1. Armar una función, a la que se le pase como parámetro un número N, y muestre por pantalla N veces el mensaje: “Módulo ejecutándose”.
