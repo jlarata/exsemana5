@@ -1,12 +1,19 @@
 # Ejercicios Semana5
 
-```Ariel Wasserman```
-
 ## Trabajo Práctico para la materia Técnicas de Programación
-*Primer Cuatrimestre, Carrera Desarrollo de Software, año 2024
+*Primer Cuatrimestre, Carrera Desarrollo de Software, año 2024*
+*Ariel Wasserman*
+
+```No pudiendo consultarle a la docente tomé algunas decisiones.```
+
+```En el ejercicio 26 la consigna me parecía ambigua. Elegí interpretarla en una de sus posiblidades: la que me pareció más lógica y más flexible y reutilizable ```
+``` En algunos casos como en el ejercicio 31 y 26, elegí usar herramientas que aún no habíamos estudiado, como tuplas y switch/case, respectivamente. Me pareció que valía la pena aprovechar para incorporar y practicar, habiendo sobrada cuenta y práctica de funciones y arrays como se puede ver en los otros ejercicios```
+```Para el ejercicio 17 soy conciente de que existen fórmulas más sencillas para obtener el MCM de X números. Me pareció un desafío interesante utilizar la metodología de multiplicar cada factor de cada número en su potencia más alta```
+```El ejercicio 25 lo resolví dos veces, puesto que ya lo había resuelto cuando nos enseñaron las búsquedas binarias y quise implementarlas```
+
+```Creo que eso es todo, para cualquier consulta: arielwdev@gmail.com```
 
 
-<!-- 
 1. Armar una función, a la que se le pase como parámetro un número N, y muestre por pantalla N veces el mensaje: “Módulo ejecutándose”.
 2. Escribir una función que nos salude, pasándole un nombre por parámetro. Su salida debe decir por ejemplo ”Hola Aristoteles, ¿cómo estás?”.
 3.  Diseñar una función que tenga como parámetros dos números, y que calcule el máximo.
@@ -43,4 +50,4 @@ Para más información sobre la distancia euclidiana: https://www.youtube.com/wa
 32.  	Escribir una función que dado un número natural, escriba por pantalla su secuencia de la Conjetura de Collatz y que devuelva la longitud o cantidad de pasos que tiene hasta llegar al primer 1.
   Para más información sobre la conjetura ver:
 ●	https://www.unocero.com/ciencia/conjetura-collatz-terence-tao/
-●	https://www.youtube.com/watch?v=q_dvxXc7d2Y-->
+●	https://www.youtube.com/watch?v=q_dvxXc7d2Y

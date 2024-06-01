@@ -1,4 +1,4 @@
-/*21.   Crear una función que pasando un número decimal, lo devuelva en hexadecimal.
+/*30.   Crear una función que pasando un número decimal, lo devuelva en hexadecimal.
  Haz otra función que dado un número en hexadecimal, lo devuelva en decimal..*/
 
 using System;
