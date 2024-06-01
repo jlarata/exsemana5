@@ -38,7 +38,6 @@ dicho número
 21.   Escribir una función que muestre en binario un número entre 0 y 255.
 22.  	Escribir una función que sume los n primeros números impares.
 23.  	Escribir una función que calcule la distancia euclídea entre dos puntos del plano. Tener en cuenta que la función debe recibir 4 parámetros: las 2 coordenadas del primer punto y las 2 coordenadas del segundo punto. 
-Para más información sobre la distancia euclidiana: https://www.youtube.com/watch?v=aaSrjfMyq1Y
 24.  	Escribir una función a la que se le pasa como parámetro un array que debe rellenar. Se leerá por teclado una serie de números: guardar en el array solo los pares e ignorar los impares. También hay que devolver la cantidad de impares ignorados.
 25.  	Escribir una función a la que se le pasa un array de enteros y un número. Debe buscar el número en el array e indicar si se encuentra o no.
 26.  	Escribir una función a la que se le pasa dos arrays, el número de elementos útiles y que operación se desea realizar: sumar, restar, multiplicar o dividir (mediante un carácter: ’s’, ’r’, ’m’, ’d’). La función debe devolver un array con los resultados.
@@ -48,6 +47,3 @@ Para más información sobre la distancia euclidiana: https://www.youtube.com/wa
 30.  	Crear una función que pasando un número decimal, lo devuelva en hexadecimal. Haz otra función que dado un número en hexadecimal, lo devuelva en decimal.
 31.  	Escribir una función que devuelva el número de la posición Fibonacci.
 32.  	Escribir una función que dado un número natural, escriba por pantalla su secuencia de la Conjetura de Collatz y que devuelva la longitud o cantidad de pasos que tiene hasta llegar al primer 1.
-  Para más información sobre la conjetura ver:
-●	https://www.unocero.com/ciencia/conjetura-collatz-terence-tao/
-●	https://www.youtube.com/watch?v=q_dvxXc7d2Y
