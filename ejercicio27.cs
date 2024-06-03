@@ -7,8 +7,16 @@ namespace ejercicio27
     internal class Program
     {
         static void Main(string[] args)
-        {        
-            int[] arrayDePrueba = { -100, 251, -456, 335, 946, 5, 7, -2};
+        {   
+            var rand = new Random();
+
+            int[] arrayDePrueba = new int[30];
+            
+            for (int i = 0; i<arrayDePrueba.Length; i++){
+            int numAleatorio = rand.Next(-1000, 1000);
+            arrayDePrueba[i] = numAleatorio;
+            }
+            
             Console.WriteLine("\nAntes de ordenar: ");
             imprimeArrayCompleto(arrayDePrueba);
 

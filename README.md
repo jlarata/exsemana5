@@ -7,7 +7,7 @@
 ```No pudiendo consultarle a la docente tomé algunas decisiones.```
 
 ```En el ejercicio 26 la consigna me parecía ambigua. Elegí interpretarla en una de sus posiblidades: la que me pareció más lógica y más flexible y reutilizable ```
-``` En algunos casos como en el ejercicio 31 y 26, elegí usar herramientas que aún no habíamos estudiado, como tuplas y switch/case, respectivamente. Me pareció que valía la pena aprovechar para incorporar y practicar, habiendo sobrada cuenta y práctica de funciones y arrays como se puede ver en los otros ejercicios```
+``` En algunos casos como en el ejercicio 31 y 26, elegí usar herramientas que aún no habíamos estudiado, como tuplas y switch/case, respectivamente. Me pareció que valía la pena aprovechar para incorporar y practicar, habiendo sobrada cuenta y práctica de funciones y arrays como se puede ver en los otros ejercicios. Lo mismo para Random(), que usé para crear arrays con números aleatorios en los ejercicios 25 y 27```
 ```Para el ejercicio 17 soy conciente de que existen fórmulas más sencillas para obtener el MCM de X números. Me pareció un desafío interesante utilizar la metodología de multiplicar cada factor de cada número en su potencia más alta```
 ```El ejercicio 25 lo resolví dos veces, puesto que ya lo había resuelto cuando nos enseñaron las búsquedas binarias y quise implementarlas```
 

@@ -8,9 +8,21 @@ namespace ejercicio25
     internal class Program
     {
         static void Main(string[] args)
-        {        
+        {      
+
+            //MODIFIAR ESTE NUMERO PARA PROBAR  
             int numeroDePrueba = 745;
-            int[] arrayDePrueba = { -100, 743, 744, 84, 16, 164, 251, -456, 335, 946, 5, 7, -2};
+            
+            var rand = new Random();
+
+            int[] arrayDePrueba = new int[20];
+            
+            for (int i = 0; i<arrayDePrueba.Length; i++){
+            int numAleatorio = rand.Next(-1000, 1000);
+            arrayDePrueba[i] = numAleatorio;
+            }
+            
+            //int[] arrayDePrueba = { -100, 743, 744, 84, 16, 164, 251, -456, 335, 946, 5, 7, -2};
 
             Console.WriteLine("\n Caso 1. Array desordenado: ");
             imprimeArrayCompleto(arrayDePrueba);
@@ -34,13 +46,15 @@ namespace ejercicio25
                 Console.WriteLine("\n {0} no se encuentra en el array", numeroDePrueba);
             }
 
+            /* este método busca en el array cada elemento del array. sirve para probar
+            que no esté roto el método de búsqueda binario
             for (int i = 0; i<arrayOrdenado.Length;i++){
                 if (buscaBinariaIntEnArray(arrayOrdenado, arrayOrdenado[i])){
                 Console.WriteLine("\n {0} se encuentra en el array", arrayOrdenado[i]);
                 } else {
                 Console.WriteLine("\n {0} no se encuentra en el array", arrayOrdenado[i]);
             }
-            }
+            }*/
 
         }
 
@@ -93,8 +107,9 @@ namespace ejercicio25
             }
            
             //debug Console.WriteLine("probando contra array 0 = {0}", array[0]);
+            /*  método extra para el elemento 0 */
             if ( (numero == array[0])) {
-                    Console.WriteLine("\n {0} se encuentra en el array (es el primer elemento!)", numero);
+                    //Console.WriteLine("\n {0} se encuentra en el array (es el primer elemento!)", numero);
                     hit = true;
                     return hit;
                 }
